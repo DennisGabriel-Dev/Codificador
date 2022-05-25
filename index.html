@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador de Texto</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <p>Codificador de texto</p>
+            <img src="Criptografia.png" alt="Criptografia">
+        </h1>
+    </header>
+
+    <main>
+        <div class="entrada">
+            <textarea id="entrada_texto" class = "entrada_texto" rows=10 cols=80 placeholder="Digite aqui seu texto" required></textarea>
+        </div>
+
+        <div class="saida">
+            <textarea  id="saida_texto" rows=10 cols=80 placeholder="Aqui sairá seu texto criptografado" disabled></textarea>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <input type="button" class= "criptografar" id="criptografar" value="criptografar" onclick="criptografar()">
+        <input type="button" class= "descriptografar" id="descriptografar" value="descriptografar" onclick="descriptografar()">
+        <input type="button" class= "copiar" id="copiar" value="copiar" onclick="copiar()">
+
+    </footer>
+    <script src="index.js">
+
+
+    </script>
+</body>
+</html>
