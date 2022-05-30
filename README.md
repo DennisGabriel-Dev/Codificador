@@ -3,6 +3,6 @@
  Link para acesso:
  https://dennisgabriel-dev.github.io/Codificador/
  
- *OBS.: Use somente letras minúsculas, sem exeções.*
+ *OBS.: Use somente letras minúsculas, sem exceções.*
  
  Em breve serão feitas melhorias. 
