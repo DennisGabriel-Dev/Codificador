@@ -1,27 +1,68 @@
 body{
-    background: rgb(238, 188, 126);
+    background-image: linear-gradient( black, rgb(0, 0, 46));
+}
+h1{
+    display: flex;
+}
+.titulo{
+    font-weight: bold;
+    color: rgba(1, 255, 255, 0.575);
+    position: absolute;
+    margin: 30px 35%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-header p{
-    position:absolute;
-    padding-left: 35%;  
+.imagem-titulo{
+    height: 100px;
+    width: 100px;
 }
 
-header img{
-    width: 80px;
-    height: 80px;
-    padding: 30px;
-}
-
-
-#saida_texto, #entrada_texto{
-    border: 2px solid #000000;
+#entrada_texto , #saida_texto{
+    border: 3px dashed rgba(77, 199, 255, 0.705);
     border-radius: 10px;
-    border-color: transparent;
-
-    background:rgb(255, 227, 193) ;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px ;
+    height: 350px;
+    width: 40%;
 }
 
-#saida{
-    
+#entrada_texto{
+    background-color: rgba(95, 223, 255, 0.178);
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 100px ; 
 }
+
+#saida_texto{
+    background-color: rgba(95, 223, 255, 0.075);
+    margin-left: 50%;
+    margin-top: 0px ;
+}
+
+.botoes{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.botao{
+    height: 50px;
+    padding: 10px 55px 20px;
+    margin-left: 25px;  
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+#criptografar{
+    background-color: rgba(0, 67, 252, 0.267);
+}
+
+#descriptografar{
+    background-color: rgba(255, 51, 0, 0.247);
+}
+
+#copiar{
+    background-color: rgb(72, 59, 85);
+}
+
