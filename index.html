@@ -10,14 +10,15 @@
 <body>
     <header>
         <h1>
-            <p>Codificador de texto</p>
-            <img src="Criptografia.png" alt="Criptografia">
+            <p class="titulo">Codificador de Texto</p>
+            <img class="imagem-titulo"
+            src="Criptografia.png" alt="Criptografia">
         </h1>
     </header>
 
     <main>
         <div class="entrada">
-            <textarea id="entrada_texto" class = "entrada_texto" rows=10 cols=80 placeholder="Digite aqui seu texto" required></textarea>
+            <textarea id="entrada_texto" rows=10 cols=80 placeholder="Digite aqui seu texto" required></textarea>
         </div>
 
         <div class="saida">
@@ -27,11 +28,11 @@
 
     </main>
 
-    <footer>
+    <footer class="botoes">
 
-        <input type="button" class= "criptografar" id="criptografar" value="criptografar" onclick="criptografar()">
-        <input type="button" class= "descriptografar" id="descriptografar" value="descriptografar" onclick="descriptografar()">
-        <input type="button" class= "copiar" id="copiar" value="copiar" onclick="copiar()">
+        <input class="botao" type="button" id="criptografar" value="Criptografar" onclick="criptografar()">
+        <input class="botao "type="button" id="descriptografar" value="Descriptografar" onclick="descriptografar()">
+        <input class="botao "type="button"  id="copiar" value="Copiar" onclick="copiar()">
 
     </footer>
     <script src="index.js">
