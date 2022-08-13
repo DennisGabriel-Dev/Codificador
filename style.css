@@ -32,6 +32,7 @@ h1{
     font-size: 15px ;
     height: 350px;
     width: 40%;
+    padding: 10px;
 }
 
 #entrada_texto{
@@ -72,4 +73,6 @@ h1{
 #copiar{
     background-color: rgb(72, 59, 85);
 }
+
+
 
