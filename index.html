@@ -17,22 +17,32 @@
     </header>
 
     <main>
-        <div class="entrada">
-            <textarea id="entrada_texto" rows=10 cols=80 placeholder="Digite aqui seu texto" required></textarea>
-        </div>
+        <div class="campo-mensagens">
+            <div class="entrada">
+                <textarea id="entrada_texto" rows=10 cols=80 placeholder="Digite aqui seu texto" required></textarea>
+            </div>
 
-        <div class="saida">
-            <textarea  id="saida_texto" rows=10 cols=80 placeholder="Aqui sairá seu texto criptografado" disabled></textarea>
+            <div class="saida">
+                <textarea  id="saida_texto" rows=10 cols=80 placeholder="Aqui sairá seu texto criptografado" disabled></textarea>
+            </div>
         </div>
 
 
     </main>
 
     <footer class="botoes">
-
-        <input class="botao" type="button" id="criptografar" value="Criptografar" onclick="criptografar()">
-        <input class="botao "type="button" id="descriptografar" value="Descriptografar" onclick="descriptografar()">
-        <input class="botao "type="button"  id="copiar" value="Copiar" onclick="copiar()">
+        <div class="botao-criptografar">
+            <input class="botao" type="button" id="criptografar" value="Criptografar" onclick="criptografar()">
+        </div>
+        <div class="botao-descriptografar">
+            <input class="botao "type="button" id="descriptografar" value="Descriptografar" onclick="descriptografar()">
+        </div>
+        <div class="botao-copiar">
+            <input class="botao "type="button"  id="copiar" value="Copiar" onclick="copiar()">
+        </div>
+        
+        
+        
 
     </footer>
     <script src="index.js">
