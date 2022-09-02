@@ -1,27 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background: rgb(238, 188, 126);
+    background-image: linear-gradient( black, rgb(0, 0, 46));
+    height: 100vh;
+}
+h1{
+    display: flex;
+}
+.titulo{
+    font-weight: bold;
+    color: rgba(1, 255, 255, 0.575);
+    position: absolute;
+    margin: 30px 35%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-header p{
-    position:absolute;
-    padding-left: 35%;  
+.imagem-titulo{
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px;
 }
 
-header img{
-    width: 80px;
-    height: 80px;
-    padding: 30px;
-}
-
-
-#saida_texto, #entrada_texto{
-    border: 2px solid #000000;
+#entrada_texto , #saida_texto{
+    border: 3px dashed rgba(77, 199, 255, 0.705);
     border-radius: 10px;
-    border-color: transparent;
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px ;
+    justify-content: center;
+    height: 350px;
+    padding: 10px;
+    resize: none;
+    width: 80%;
+}
+#entrada_texto{
+    background-color: rgba(95, 223, 255, 0.178);
+    margin-left: 100px ;
 
-    background:rgb(255, 227, 193) ;
 }
 
-#saida{
+#saida_texto{
+    background-color: rgba(133, 133, 133, 0.075);
+    margin-top: 0px ;
+    margin-right: 100px;
+}
+
+.campo-mensagens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes{
+    margin: 50px 50vh;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
     
 }
+
+.botao{
+
+    height: 50px;
+    padding: 10px 55px 20px;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+#criptografar{
+    background-color: rgba(0, 67, 252, 0.267);
+}
+
+#criptografar:hover{
+    background-color: rgba(21, 44, 253, 0.644);
+}
+
+#descriptografar{
+    background-color: rgba(255, 51, 0, 0.247);
+}
+#descriptografar:hover{
+    background-color: rgba(250, 0, 0, 0.555);
+}
+
+#copiar{
+    background-color: rgb(40, 33, 49);
+}
+
+#copiar:hover{
+    background-color: rgb(98, 95, 100);
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-image: linear-gradient( black, rgb(0, 0, 46));
+        height: 100%;
+        margin: 25px 10px;
+    }
+    .campo-mensagens{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #entrada_texto, #saida_texto{
+        width: 100%;
+    }
+    #entrada_texto{
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    #saida_texto{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .botoes{
+        flex-direction: column;
+        margin: 0 0;
+    }
+    .botao{
+        width: 100%;
+        height: 50px;
+    }
+}
+
+
